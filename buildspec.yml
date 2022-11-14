@@ -40,8 +40,6 @@ phases:
         - echo `ls -l`
         - pip3 install -r requirements.txt 
         - python -m pytest test_main.py
-        - pip3 install -r requirements.txt 
-        - python -m pytest test_main.
   build:
     commands:
       - docker build --tag $REPOSITORY_URI:$TAG .
